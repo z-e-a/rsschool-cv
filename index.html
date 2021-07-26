@@ -17,60 +17,80 @@
         <section>
           <h2>About myself</h2>
           <p>
-            For the last time I keen to developing a web-applications and I would like to make it my profession...
+            Recently I keen to developing a web-applications and I would like to
+            make it my profession...
           </p>
         </section>
         <section>
-          <div>
-            <a id="skills"></a>
-            <h2>Skills</h2>
-            <ul>
-              <li>HTML/CSS</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-              <li>Java (Core, J2EE, Spring)</li>
-            </ul>
-          </div>
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+            <li>Java (Core, J2EE, Spring)</li>
+          </ul>
         </section>
         <section>
-            <div>
-              <a id="education"></a>
-              <h2>Graduation</h2>
-              <p>
-                Master of Computer Science<br />
-                Taganrog State University of Radio Engineering
-              </p>
-            </div>
-          </section> 
+          <h2>Code example</h2>
+          <p>
+            Kata
+            <a href="https://www.codewars.com/kata/duplicate-encoder"
+              >"Duplicate Encoder"</a
+            >
+            for 6kyu at codewars.com :
+          </p>
+          <pre class="code">
+    <b>function</b> duplicateEncode(word){
+      <b>return</b> word.toLowerCase().split('').map((char,index, arr) => {
+        <b>return</b>  [].concat(arr.slice(0,index),arr.slice(index+1)).includes(char) ? ')' : '('
+      }).join('');
+    }
+              </pre
+          >
+        </section>
         <section>
-            <div>
-              <a id="english"></a>
-              <h2>English</h2>
-              <p>B1 (Intermediate)</p>
-            </div>
-          </section>
+          <h2>Graduation</h2>
+          <p>
+            Master of Computer Science<br />
+            Taganrog State University of Radio Engineering
+          </p>
+        </section>
+        <section>
+          <h2>Work experience</h2>
+          <p>Support officer of regional authority</p>
+        </section>
+        <section>
+          <h2>English</h2>
+          <p>B1 (Intermediate)</p>
+        </section>
       </main>
       <footer class="footer">
         <h3>Contact information:</h3>
         <div class="footer-content">
-        <ul class="contacts">
-          <li class="contact">
-            E-mail:
-            <a href="mailto:e.a.zubkov@yandex.ru">e.a.zubkov@yandex.ru</a>
-          </li>
-          <li class="contact">
-            GitHub:
-            <a href="https://github.com/z-e-a">www. github.com/z-e-a</a>
-          </li>
-          <li class="contact">Discord: <i>z-e-a#2614</i></li>
-        </ul>
-        <div class="rss-link">
-
-          <a class="rss" href="https://rs.school/js/" target="_blank" rel="noopener">
-            <span class="rss-year">'21</span>
-          </a>
+          <address class="contacts">
+            <ul>
+              <li class="contact">
+                E-mail:
+                <a href="mailto:e.a.zubkov@yandex.ru">e.a.zubkov@yandex.ru</a>
+              </li>
+              <li class="contact">
+                GitHub:
+                <a href="https://github.com/z-e-a">www. github.com/z-e-a</a>
+              </li>
+              <li class="contact">Discord: <i>z-e-a#2614</i></li>
+            </ul>
+          </address>
+          <div class="rss-link">
+            <a
+              class="rss"
+              href="https://rs.school/js/"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="rss-year">'21</span>
+            </a>
+          </div>
         </div>
-      </div>        
       </footer>
     </div>
   </body>
