@@ -1,1 +1,2 @@
-["Curriculum vitae Markdown-version"](https://z-e-a.github.io/rsschool-cv/cv)
+
+["Curriculum vitae HTML&CSS-version"](https://z-e-a.github.io/rsschool-cv/)
