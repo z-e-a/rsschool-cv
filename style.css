@@ -1,0 +1,103 @@
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 3px solid dimgrey;
+  border-radius: 20px;
+  /* background-color: aqua; */
+  background: linear-gradient(
+    to bottom,
+    #7d75a0 0%,
+    #f3f2f6 20%,
+    #f3f2f6 85%,
+    #7d75a0 100%
+  );
+}
+
+.caption {
+  width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 3em;
+  color: #16367d;
+  /* text-shadow: 0 4px 4px rgb(49, 49, 49); */
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  /* padding-left: 70px; */
+}
+
+main {
+  margin-left: 100px;
+  font-size: larger;
+}
+
+main h2 {
+  color: #16367d;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.photo {
+  display: block;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid dimgrey;
+}
+
+footer h3 {
+  color: #16367d;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  /* width: 300px;
+  text-align: center;
+  margin: 0 auto; */
+}
+
+footer ul {
+  /* width: 300px; */
+  /* margin: 0 auto; */
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+}
+
+.contacts {
+    flex-grow: 1;
+}
+
+.rss-link{
+    display: block;
+    width: 150px;
+}
+
+.rss {
+    display: block;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 86px;
+    height: 32px;
+    background-image: url('rs_school_js.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-right: 22px;
+}
+
+.rss-year {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    letter-spacing: -2px;
+    color: #2a2930;
+    line-height: 0.7;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .rss:hover .rss-year {
+    right: -5px;
+    letter-spacing: 0;
+  }
