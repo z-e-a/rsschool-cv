@@ -1,3 +1,6 @@
+body._lock{
+  overflow: hidden;
+}
 
 .page{
   padding: 70px 0 20px 0;
@@ -92,8 +95,8 @@
     left: -110%;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 100px 30px 30px 30px;
+    background-color: rgba(22, 54, 125, 0.9);
+    padding: 100px 30px 30px 40px;
     transition: left 0.3s ease 0s;
   }
   
@@ -139,6 +142,7 @@
   .menu__icon._active span{
     transform: scale(1) translateX(-60%);
     background: transparent;
+    box-shadow: none;    
   }
 
   .menu__icon._active::before {
@@ -160,7 +164,8 @@
 
   .menu__link{
     font-size: 24px;
-    color: #cecbdb
+    color: #cecbdb;
+    text-shadow: ;
   }
 }
 
