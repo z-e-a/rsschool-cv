@@ -19,32 +19,86 @@
     <div class="content-wrapper">
       <header class="header">
         <div class="header__container">
-        <a
-          href="https://github.com/z-e-a/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style="text-decoration: none; color: white"
-          class="header__logo"
-        >
-          <i class="fab fa-github-alt"></i>
-        </a>
-        <div class="header__menu menu">
-          <div class="menu__icon">
-            <span></span>
+          <a
+            href="https://github.com/z-e-a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="text-decoration: none; color: white"
+            class="header__logo"
+          >
+            <i class="fab fa-github-alt"></i>
+          </a>
+          <div class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li>
+                  <a
+                    data-goto=".page__section_about"
+                    class="menu__link"
+                    href="#"
+                    >about</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_skills"
+                    class="menu__link"
+                    href="#"
+                    >skills</a
+                  >
+                </li>
+                <li>
+                  <a data-goto=".page__section_code" class="menu__link" href="#"
+                    >code example</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_education"
+                    class="menu__link"
+                    href="#"
+                    >education</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_experience"
+                    class="menu__link"
+                    href="#"
+                    >experience</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_english"
+                    class="menu__link"
+                    href="#"
+                    >english</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_contacts"
+                    class="menu__link"
+                    href="#"
+                    >contacts</a
+                  >
+                </li>
+                <li>
+                  <a
+                    data-goto=".page__section_projects"
+                    class="menu__link"
+                    href="#"
+                    >projects</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="menu__body">
-            <ul class="menu__list">
-              <li><a data-goto=".page__section_about" class="menu__link" href="#">about</a></li>
-              <li><a data-goto=".page__section_skills" class="menu__link" href="#">skills</a></li>
-              <li><a data-goto=".page__section_code" class="menu__link" href="#">code example</a></li>
-              <li><a data-goto=".page__section_education" class="menu__link" href="#">education</a></li>
-              <li><a data-goto=".page__section_experience" class="menu__link" href="#">experience</a></li>
-              <li><a data-goto=".page__section_english" class="menu__link" href="#">english</a></li>
-              <li><a data-goto=".page__section_contacts" class="menu__link" href="#">contacts</a></li>
-            </ul>
-          </nav>
         </div>
-      </div>
       </header>
       <main class="page">
         <section class="page__section">
@@ -77,19 +131,20 @@
             for 6kyu at codewars.com :
           </p>
           <pre> <code class="javascript">
-            // function indexEqualsValue returns the lowest index for which array[index] == index
-            // perfomance must be &lt;100 ms
-            function indexEqualsValue(a) {
-              // binary search algorithm:              
-              var low = 0, mid, high = a.length-1;
-              if (a[0]==0) return 0;
-              while (low &lt; high){
-                  mid = Math.floor((low+high)/2);
-                  if (a[mid]-mid >= 0) high = mid;
-                  else low = mid +1;
-              }
-              return a[low] == low ? low : -1;
-          }
+// function indexEqualsValue returns the lowest index 
+// for which array[index] == index
+// perfomance must be &lt;100 ms
+function indexEqualsValue(a) {
+  // binary search algorithm:              
+  var low = 0, mid, high = a.length-1;
+  if (a[0]==0) return 0;
+  while (low &lt; high){
+      mid = Math.floor((low+high)/2);
+      if (a[mid]-mid >= 0) high = mid;
+      else low = mid +1;
+  }
+  return a[low] == low ? low : -1;
+}
                         </code></pre>
         </section>
         <section class="page__section page__section_education">
@@ -106,6 +161,53 @@
         <section class="page__section page__section_english">
           <h2>English</h2>
           <p>B1 (Intermediate)</p>
+        </section>
+        <section class="page__section page__section_projects">
+          <h2>Recent projects</h2>
+          <div class="projects__container">
+            <a href="https://rolling-scopes-school.github.io/z-e-a-JSFEPRESCHOOL/custom-video-player/"
+              target="_blank">
+              <figure class="project__card">
+                <img class="project__img"
+                     src="img/custom-video-player.jpeg"
+                     alt="Custom video player project"/>
+                <figcaption class="project__description">
+                  <h3 class="project__caption">Custom video player</h3>
+                  <p class="project__about">A customised HTML5 video player with custom designed controls and behaviour</p>
+                  <p class="project__technologies">HTML, CSS, JS</p>
+                </figcaption>
+              </figure>
+            </a>
+            
+            <a href="https://rolling-scopes-school.github.io/z-e-a-JSFEPRESCHOOL/photo-filter/"
+              target="_blank">
+              <figure class="project__card">
+                <img class="project__img"
+                     src="img/photo-filter.jpeg"
+                     alt="Custom video player project"/>
+                <figcaption class="project__description">
+                  <h3 class="project__caption">Photo filter</h3>
+                  <p class="project__about">A web-application for applying CSS-filters to an image loaded from PC</p>
+                  <p class="project__technologies">HTML, CSS-filters, CSS-variables, JS</p>
+                </figcaption>
+              </figure>
+            </a>
+
+            <a href="https://rolling-scopes-school.github.io/z-e-a-JSFEPRESCHOOL/vertical-slider/"
+              target="_blank">
+              <figure class="project__card">
+                <img class="project__img"
+                     src="img/vertical-slider.jpeg"
+                     alt="Vertical slider project"/>
+                <figcaption class="project__description">
+                  <h3 class="project__caption">Vertical slider</h3>
+                  <p class="project__about">Slider than can switch content by touch and swipe</p>
+                  <p class="project__technologies">HTML, CSS, JS, DOM-events</p>
+                </figcaption>
+              </figure>
+            </a>
+
+          </div>
         </section>
       </main>
       <footer class="footer page__section_contacts">
@@ -141,6 +243,6 @@
     <script>
       hljs.initHighlightingOnLoad("javascript");
     </script>
-    <script src="js/index.js"></script>    
+    <script src="js/index.js"></script>
   </body>
 </html>
