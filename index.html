@@ -78,12 +78,12 @@
           </p>
           <pre> <code class="javascript">
             // function indexEqualsValue returns the lowest index for which array[index] == index
-            // perfomance must be <100 ms            
+            // perfomance must be &lt100 ms
             function indexEqualsValue(a) {
               // binary search algorithm:              
               var low = 0, mid, high = a.length-1;
               if (a[0]==0) return 0;
-              while (low < high){
+              while (low &lt high){
                   mid = Math.floor((low+high)/2);
                   if (a[mid]-mid >= 0) high = mid;
                   else low = mid +1;
