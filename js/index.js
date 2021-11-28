@@ -65,6 +65,10 @@ if(menuLinks.length > 0) {
         if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+            window.location.hash = '#' + menuLink.dataset.goto.split('.page__section_')[1];
+                menuLinks.forEach(lnk => {
+                    lnk == menuLink ? lnk.classList.add('active') : lnk.classList.remove('active');
+                });
 
             if(menuBtn.classList.contains('_active')){
                menuBtn.classList.remove('_active');
